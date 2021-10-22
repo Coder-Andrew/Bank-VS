@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3ca17bf0-5f46-470e-a079-8234341ce24f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Bank1\filestructure.py</StartupFile>
+    <StartupFile>Bank\Ver 2\fileStructure\searchDirForModule.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,10 +26,29 @@
     <Compile Include="Bank1\filestructure.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Bank\Ver 1\bank.py" />
+    <Compile Include="Bank\Ver 2\fileStructure\osLibTests.py" />
+    <Compile Include="Bank\Ver 2\fileStructure\searchDirForModule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bank\Ver 2\fileStructure\testClass\importFromFolder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bank\Ver 2\fileStructure\testClass\importThis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bank\Ver 2\fileStructure\testClass\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Bank_VS.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Bank1\" />
+    <Folder Include="Bank\" />
+    <Folder Include="Bank\Ver 1\" />
+    <Folder Include="Bank\Ver 2\" />
+    <Folder Include="Bank\Ver 2\fileStructure\" />
+    <Folder Include="Bank\Ver 2\fileStructure\testClass\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.9" />
