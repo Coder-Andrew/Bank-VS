@@ -95,7 +95,6 @@ class User(Account):
         print('Charge name: \'{}\' not found.'.format(charge_name))
         return False
 
-
     def pay_charge(self, charge_name, amount):
         if self.charge_exists(charge_name):
             if amount > self.balance:
@@ -109,7 +108,6 @@ class User(Account):
                     else:
                         self.balance -= amount
                         i.amount -= amount
-
 
     def del_charges(self):
         i = 0
@@ -143,7 +141,6 @@ class Admin(Account):
         if self.test_authority(1):
             self.bank.add_user(user)
 
-
     def check_user_balance(self, user):
         if self.test_authority(1):
             print(self.bank.check_user_balance(user))
@@ -151,7 +148,6 @@ class Admin(Account):
     def print_user(self, user):
         if self.test_authority(2):
             self.bank.print_user(user)
-
 
     def print_users(self):
         '''Only allows access to bank's methods if admin meets a certain authority level'''
