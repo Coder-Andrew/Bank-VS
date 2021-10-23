@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3ca17bf0-5f46-470e-a079-8234341ce24f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Bank\Ver 2\writeFilesToDir\writeTest.py</StartupFile>
+    <StartupFile>Bank\Ver 2\createClassFromFile\bank.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,6 +27,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bank\Ver 1\bank.py" />
+    <Compile Include="Bank\Ver 2\Bank1\filestructure.py" />
+    <Compile Include="Bank\Ver 2\createClassFromFile\account.py" />
+    <Compile Include="Bank\Ver 2\createClassFromFile\bank.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bank\Ver 2\createClassFromFile\fileHandler.py" />
+    <Compile Include="Bank\Ver 2\createClassFromFile\main.py" />
+    <Compile Include="Bank\Ver 2\createClassFromFile\transaction.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Bank\Ver 2\fileStructure\osLibTests.py" />
     <Compile Include="Bank\Ver 2\fileStructure\searchDirForModule.py">
       <SubType>Code</SubType>
@@ -40,6 +50,7 @@
     <Compile Include="Bank\Ver 2\fileStructure\testClass\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Bank\Ver 2\iterClassTest\iterClass.py" />
     <Compile Include="Bank\Ver 2\writeFilesToDir\writeTest.py">
       <SubType>Code</SubType>
     </Compile>
@@ -50,13 +61,41 @@
     <Folder Include="Bank\" />
     <Folder Include="Bank\Ver 1\" />
     <Folder Include="Bank\Ver 2\" />
+    <Folder Include="Bank\Ver 2\Bank1\" />
+    <Folder Include="Bank\Ver 2\Bank1\Classes\" />
+    <Folder Include="Bank\Ver 2\Bank1\Classes\account\" />
+    <Folder Include="Bank\Ver 2\Bank1\Classes\bank\" />
+    <Folder Include="Bank\Ver 2\Bank1\Classes\file handling\" />
+    <Folder Include="Bank\Ver 2\Bank1\Test\" />
+    <Folder Include="Bank\Ver 2\Bank1\Users\" />
+    <Folder Include="Bank\Ver 2\Bank1\Users\user1\" />
+    <Folder Include="Bank\Ver 2\Bank1\Users\user2\" />
+    <Folder Include="Bank\Ver 2\Bank1\Users\user3\" />
+    <Folder Include="Bank\Ver 2\createClassFromFile\" />
+    <Folder Include="Bank\Ver 2\createClassFromFile\users\" />
+    <Folder Include="Bank\Ver 2\createClassFromFile\users\user1\" />
+    <Folder Include="Bank\Ver 2\createClassFromFile\users\user2\" />
+    <Folder Include="Bank\Ver 2\createClassFromFile\__pycache__\" />
     <Folder Include="Bank\Ver 2\fileStructure\" />
+    <Folder Include="Bank\Ver 2\fileStructure\testClass\__pycache__\" />
     <Folder Include="Bank\Ver 2\fileStructure\writeHere\" />
     <Folder Include="Bank\Ver 2\fileStructure\testClass\" />
+    <Folder Include="Bank\Ver 2\iterClassTest\" />
     <Folder Include="Bank\Ver 2\writeFilesToDir\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include="Bank\Ver 2\createClassFromFile\users\user2\checking.txt" />
+    <Content Include="Bank\Ver 2\createClassFromFile\users\user2\savings.txt" />
+    <Content Include="Bank\Ver 2\createClassFromFile\users\user1\checking.txt" />
+    <Content Include="Bank\Ver 2\createClassFromFile\users\user1\savings.txt" />
+    <Content Include="Bank\Ver 2\createClassFromFile\__pycache__\account.cpython-39.pyc" />
+    <Content Include="Bank\Ver 2\createClassFromFile\__pycache__\fileHandler.cpython-39.pyc" />
+    <Content Include="Bank\Ver 2\fileStructure\testClass\__pycache__\importThis.cpython-39.pyc" />
+    <Content Include="Bank\Ver 2\fileStructure\testClass\__pycache__\__init__.cpython-39.pyc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
