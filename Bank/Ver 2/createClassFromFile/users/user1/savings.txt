@@ -1,4 +1,4 @@
 Account Name,Balance,Account Type
 Sally,5,savings
 
-Starting Balance,Transactions,End Balance
+Starting Balance,Amount,End Balance

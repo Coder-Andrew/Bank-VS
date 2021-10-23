@@ -1,6 +1,9 @@
 from account import Account, Checking, Savings
 from fileHandler import Account_Handler
+from transaction import Transaction
 
+'''
+#Testing file handling class
 file_name = 'Checking.txt'
 
 hank = Account_Handler()
@@ -18,3 +21,15 @@ except ValueError as excpt:
 
 
 print(hank.user_list())
+
+'''
+
+
+#Testing transactions
+hank = Savings('HankHill',50000)
+
+hank.add_transaction(Transaction(500))
+hank.add_transaction(Transaction(50,'w'))
+print(hank.get_balance_after_transactions())
+
+hank.print_transactions()

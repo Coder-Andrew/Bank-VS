@@ -6,6 +6,8 @@ class Bank:
     def __init__(self, *args):
         self.users = [*args]
 
+        self.import_existing_users()
+
     def add_user(self, user):
         self.users.append(user)
 
@@ -27,6 +29,6 @@ class Bank:
 
 usbank = Bank()
 
-usbank.import_existing_users()
+#usbank.import_existing_users()
 for i in usbank.users:
     print(i)
