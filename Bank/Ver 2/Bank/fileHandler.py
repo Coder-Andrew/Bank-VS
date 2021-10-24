@@ -3,9 +3,10 @@ import os
 class Account_Handler:
     def __init__(self, directory = os.getcwd()):
         self.directory = directory
-
         if os.path.split(self.directory)[1] == 'Bank VS':
-            self.directory += '\\Bank\\Ver 2\\createClassFromFile\\users\\'
+            self.directory += '\\Bank\\Ver 2\\Bank\\users\\'
+        else:
+            self.directory += '\\users\\'
 
     def input_from_file(self, filename):
         # = self.directory + '\\' + filename

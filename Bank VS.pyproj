@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3ca17bf0-5f46-470e-a079-8234341ce24f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Bank\Ver 2\createClassFromFile\main.py</StartupFile>
+    <StartupFile>Bank\Ver 2\Bank\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,14 +27,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bank\Ver 1\bank.py" />
-    <Compile Include="Bank\Ver 2\Bank1\filestructure.py" />
-    <Compile Include="Bank\Ver 2\createClassFromFile\account.py" />
-    <Compile Include="Bank\Ver 2\createClassFromFile\bank.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Bank\Ver 2\createClassFromFile\fileHandler.py" />
-    <Compile Include="Bank\Ver 2\createClassFromFile\main.py" />
-    <Compile Include="Bank\Ver 2\createClassFromFile\transaction.py">
+    <Compile Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\filestructure.py" />
+    <Compile Include="Bank\Ver 2\Bank\account.py" />
+    <Compile Include="Bank\Ver 2\Bank\bank.py" />
+    <Compile Include="Bank\Ver 2\Bank\fileHandler.py" />
+    <Compile Include="Bank\Ver 2\Bank\main.py" />
+    <Compile Include="Bank\Ver 2\Bank\transaction.py" />
+    <Compile Include="Bank\Ver 2\Bank\randTest.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bank\Ver 2\fileStructure\osLibTests.py" />
@@ -61,22 +60,22 @@
     <Folder Include="Bank\" />
     <Folder Include="Bank\Ver 1\" />
     <Folder Include="Bank\Ver 2\" />
-    <Folder Include="Bank\Ver 2\Bank1\" />
-    <Folder Include="Bank\Ver 2\Bank1\Classes\" />
-    <Folder Include="Bank\Ver 2\Bank1\Classes\account\" />
-    <Folder Include="Bank\Ver 2\Bank1\Classes\bank\" />
-    <Folder Include="Bank\Ver 2\Bank1\Classes\file handling\" />
-    <Folder Include="Bank\Ver 2\Bank1\Test\" />
-    <Folder Include="Bank\Ver 2\Bank1\Users\" />
-    <Folder Include="Bank\Ver 2\Bank1\Users\user1\" />
-    <Folder Include="Bank\Ver 2\Bank1\Users\user2\" />
-    <Folder Include="Bank\Ver 2\Bank1\Users\user3\" />
-    <Folder Include="Bank\Ver 2\createClassFromFile\" />
-    <Folder Include="Bank\Ver 2\createClassFromFile\users\" />
-    <Folder Include="Bank\Ver 2\createClassFromFile\users\HankHill\" />
-    <Folder Include="Bank\Ver 2\createClassFromFile\users\user1\" />
-    <Folder Include="Bank\Ver 2\createClassFromFile\users\user2\" />
-    <Folder Include="Bank\Ver 2\createClassFromFile\__pycache__\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Classes\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Classes\account\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Classes\bank\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Classes\file handling\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Test\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Users\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Users\user1\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Users\user2\" />
+    <Folder Include="Bank\Ver 2\Bank1 %28Empty File Structure Format%29\Users\user3\" />
+    <Folder Include="Bank\Ver 2\Bank\" />
+    <Folder Include="Bank\Ver 2\Bank\users\" />
+    <Folder Include="Bank\Ver 2\Bank\users\HankHill\" />
+    <Folder Include="Bank\Ver 2\Bank\users\user1\" />
+    <Folder Include="Bank\Ver 2\Bank\users\user2\" />
+    <Folder Include="Bank\Ver 2\Bank\__pycache__\" />
     <Folder Include="Bank\Ver 2\fileStructure\" />
     <Folder Include="Bank\Ver 2\fileStructure\testClass\__pycache__\" />
     <Folder Include="Bank\Ver 2\fileStructure\writeHere\" />
@@ -89,13 +88,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitattributes" />
-    <Content Include="Bank\Ver 2\createClassFromFile\users\HankHill\saving.txt" />
-    <Content Include="Bank\Ver 2\createClassFromFile\users\user2\checking.txt" />
-    <Content Include="Bank\Ver 2\createClassFromFile\users\user2\savings.txt" />
-    <Content Include="Bank\Ver 2\createClassFromFile\users\user1\checking.txt" />
-    <Content Include="Bank\Ver 2\createClassFromFile\users\user1\savings.txt" />
-    <Content Include="Bank\Ver 2\createClassFromFile\__pycache__\account.cpython-39.pyc" />
-    <Content Include="Bank\Ver 2\createClassFromFile\__pycache__\fileHandler.cpython-39.pyc" />
+    <Content Include="Bank\Ver 2\Bank\users\HankHill\saving.txt" />
+    <Content Include="Bank\Ver 2\Bank\users\user1\checking.txt" />
+    <Content Include="Bank\Ver 2\Bank\users\user1\savings.txt" />
+    <Content Include="Bank\Ver 2\Bank\users\user2\checking.txt" />
+    <Content Include="Bank\Ver 2\Bank\users\user2\savings.txt" />
+    <Content Include="Bank\Ver 2\Bank\__pycache__\account.cpython-39.pyc" />
+    <Content Include="Bank\Ver 2\Bank\__pycache__\fileHandler.cpython-39.pyc" />
+    <Content Include="Bank\Ver 2\Bank\__pycache__\transaction.cpython-39.pyc" />
     <Content Include="Bank\Ver 2\fileStructure\testClass\__pycache__\importThis.cpython-39.pyc" />
     <Content Include="Bank\Ver 2\fileStructure\testClass\__pycache__\__init__.cpython-39.pyc" />
   </ItemGroup>
