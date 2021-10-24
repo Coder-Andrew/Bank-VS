@@ -33,3 +33,8 @@ hank.add_transaction(Transaction(50,'w'))
 print(hank.get_balance_after_transactions())
 
 hank.print_transactions()
+
+act_hndlr = Account_Handler()
+
+act_hndlr.make_dir(hank)
+act_hndlr.make_account_text(hank)

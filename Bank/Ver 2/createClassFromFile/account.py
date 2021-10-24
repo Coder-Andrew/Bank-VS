@@ -5,7 +5,7 @@ class Account:
         self.transactions = transactions
 
     def __str__(self):
-        return ('{},{},{}'.format(self.user, self.balance, self.transactions))
+        return ('{},{}'.format(self.user, self.balance))
 
     def add_transaction(self, transaction):
         self.transactions.append(transaction)
@@ -40,6 +40,3 @@ class Savings(Account):
 
     def __str__(self):
         return Account.__str__(self) + ',' + self.account_type
-
-hank = Checking('Hank', 200)
-
