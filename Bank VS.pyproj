@@ -57,10 +57,22 @@
     <Compile Include="Bank\Ver 3\classes\account.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Bank\Ver 3\classes\bank.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Bank\Ver 3\classes\checking.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Bank\Ver 3\classes\savings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bank\Ver 3\classes\transaction.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Bank\Ver 3\classes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bank\Ver 3\classes\file_handler.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bank\Ver 3\main.py">

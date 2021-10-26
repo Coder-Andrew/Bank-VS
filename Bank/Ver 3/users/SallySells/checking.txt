@@ -1,0 +1,4 @@
+First Name,Last Name,Account Type,Balance
+Sally,Sells,checking,2000
+
+Initial Balance,Amount,Final Balance,Checked
