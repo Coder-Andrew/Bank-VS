@@ -64,3 +64,6 @@ class Account_Handler:
 
     def user_list(self):
         return os.listdir(self.directory)
+
+    def import_transactions(self):
+        pass
