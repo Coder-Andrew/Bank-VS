@@ -20,7 +20,6 @@ class Account_Handler:
     def import_transaction(self, amount):   #might need to modify to include the checked variable. 
         return Transaction(amount)
 
-
     def import_existing_users(self):
         hold_list = []
         for i in self.list_account_file_directories():
@@ -37,14 +36,14 @@ class Account_Handler:
                 file.readline()
 
                 while True:                                             #entering loop that inputs user's transactions
-                    info = file.readline()
+                    info = file.readline().strip()
 
                     if info == '':
                         break
 
                     info = info.strip().split(',')
 
-                    user.transactions.append(Transaction(info[1]))
+                    user.transactions.append(Transaction(info[1],info[0],info[2],info[3]))
 
             hold_list.append(user)
         return hold_list

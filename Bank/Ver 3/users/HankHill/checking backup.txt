@@ -2,4 +2,3 @@ First Name,Last Name,Account Type,Balance
 Hank,Hill,checking,1650
 
 Initial Balance,Amount,Final Balance,Checked
-500,5000,5500,True
