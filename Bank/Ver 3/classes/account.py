@@ -38,8 +38,26 @@ class Account:
                     self.balance += i.amount
 
     def add_transaction(self, transaction):
+        transaction.balance_initial = self.balance
+        self.balance += transaction.amount
+        transaction.balance_final = self.balance
+        #transaction.checked = True
         self.transactions.append(transaction)
-        self.update_balance_after_transactions()
+        self.append_transaction_to_file(transaction) #left off here, still need to test,
+        self.write_to_file()
+
+    def write_to_file(self):
+        with open(self.file_path, 'w') as file:
+                file.write('First Name,Last Name,Account Type,Balance\n')
+                file.write('{},{},{},{}\n\nInitial Balance,Amount,Final Balance\n'.format(self.first_name, self.last_name, self.account_type, self.balance))
+                for i in self.transactions:
+                    file.write(i.format_for_write())
+
+    def append_transaction_to_file(self, transaction):
+        with open(self.file_path,'a') as file:
+            file.write(transaction.format_for_write())
+
+    #def import_transactions(self):
 
     def update_balance_after_transactions(self):
         initial_balance = self.balance
@@ -58,3 +76,10 @@ class Account:
             data = file.read()
             data[1].replace(str(initial_balance)+'\n', str(self.balance)+'\n')
             file.write(data)
+
+    def print_transactions(self):
+        for i in self.transactions:
+            print(i)
+
+    def __str__(self):
+        return 'Please Work: {},{},{},{}'.format(self.first_name, self.last_name, self.account_type, self.balance)

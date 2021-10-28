@@ -13,4 +13,7 @@ class Transaction:
         return 'Already checked'
 
     def format_for_write(self):
-        return '{},{},{},{}\n'.format(self.balance_initial, self.amount, self.balance_final, self.checked)
+        return '{},{},{}\n'.format(self.balance_initial, self.amount, self.balance_final)
+
+    def __str__(self):
+        return '{},{},{}'.format(self.balance_initial, self.amount, self.balance_final)

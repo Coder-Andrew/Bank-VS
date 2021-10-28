@@ -1,7 +1,7 @@
 from .file_handler import Account_Handler
 
 class Bank:
-    def __init__(self,name):
+    def __init__(self,name, *args):
         self.name = name
         self.users = []
 
