@@ -8,11 +8,14 @@ class Account:
         self.transactions = transactions
         self.accounts = []
 
+        self.initial_balance = None
+
         #strips the file name from the directory, directs to the Ver 3 directory, then goes to the user's directory
         self.path = os.path.split(os.path.split(__file__)[0])[0] + '\\users\\' + self.first_name + self.last_name + '\\'
         self.file_path = None
-                                                                                                                           
 
+        self.set_initial_balance()
+                                                                                                                           
         self.make_folder_if_one_doesnt_exist()
 
     def make_folder_if_one_doesnt_exist(self):
@@ -80,6 +83,12 @@ class Account:
     def print_transactions(self):
         for i in self.transactions:
             print(i)
+
+    def set_initial_balance(self):
+        if len(self.transactions) >= 1:
+            self.initial_balance = self.transactions[0].balance_initial
+        else:
+            self.initial_balance = self.balance
 
     def __str__(self):
         return 'Please Work: {},{},{},{}'.format(self.first_name, self.last_name, self.account_type, self.balance)

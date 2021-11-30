@@ -63,6 +63,9 @@
     <Compile Include="Bank\Ver 3\classes\checking.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Bank\Ver 3\classes\plotter.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Bank\Ver 3\classes\savings.py">
       <SubType>Code</SubType>
     </Compile>

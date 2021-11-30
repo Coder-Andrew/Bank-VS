@@ -1,8 +1,7 @@
 First Name,Last Name,Account Type,Balance
-Hank,Hill,checking,1650
+Hank,Hill,checking,5000
 
 Initial Balance,Amount,Final Balance,Checked
-55500,5000,5500
-0,0,0
-1,1,1
-
+1000,4200,5200
+5200,1000,6200
+6200,-1200,5000
