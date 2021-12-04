@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Bank",
+    "\\Bank\\Ver 3",
+    "\\Bank\\Ver 3\\classes",
+    "\\Bank\\Ver 4",
+    "\\Bank\\Ver 4\\classes"
   ],
+  "SelectedNode": "\\Bank\\Ver 4\\classes\\checking.py",
   "PreviewInSolutionExplorer": false
 }
