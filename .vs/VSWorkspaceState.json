@@ -5,8 +5,12 @@
     "\\Bank\\Ver 3",
     "\\Bank\\Ver 3\\classes",
     "\\Bank\\Ver 4",
-    "\\Bank\\Ver 4\\classes"
+    "\\Bank\\Ver 4\\classes",
+    "\\Bank\\Ver 4\\tests",
+    "\\Bank\\Ver 4\\users",
+    "\\Bank\\Ver 4\\users\\FredJennings",
+    "\\Bank\\Ver 4\\users\\HankHill"
   ],
-  "SelectedNode": "\\Bank\\Ver 4\\classes\\checking.py",
+  "SelectedNode": "\\Bank\\Ver 4\\users\\HankHill\\checking.txt",
   "PreviewInSolutionExplorer": false
 }

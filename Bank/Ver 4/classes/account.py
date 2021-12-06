@@ -31,16 +31,20 @@ class Account:
             self.transactions.append(Transaction(self.balance,0,self.balance))
 
 
-    def append_account_file(self, account_file_path, item):
-        with open(account_file_path, 'a') as file:
-            file.write(item)
+    def append_transaction_to_transaction_list(self, transaction):
+        self.transactions.append(transaction)
 
 
-    def update_balance_after_transaction(self, account_file_path, transaction):
-        pass
+    def rewrite_file_to_update_balance_in_file(self, account_file_path, account_type):
+        with open(account_file_path, 'w') as file:
+            file.write('First Name,Last Name,Account Type,Balance\n')
+            file.write('{},{},{},{}\n\nInitial Balance,Amount,Final Balance\n'.format(self.first_name, self.last_name, account_type, self.balance))
+
+            for i in self.transactions:
+                file.write(i.write_format())
 
 
-    def add_transaction(self, account_file_path, amount):
+    def add_transaction(self, account_file_path, account_type, amount):
         if (self.balance + amount) < 0:
             raise ValueError('Cannot takeout more money than what\'s in your account')
 
@@ -49,7 +53,7 @@ class Account:
         self.balance = transaction.final
         self.transactions.append(transaction)
 
-        self.append_account_file()
+        self.rewrite_file_to_update_balance_in_file(account_file_path, account_type)
 
 if __name__ == '__main__':
     test = Account('John', 'South', 500)

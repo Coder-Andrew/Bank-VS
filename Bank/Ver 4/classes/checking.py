@@ -10,4 +10,5 @@ class Checking(Account):
 
 if __name__ == '__main__':
     test = Checking('Fred','Jennings',500)
-    print(test.file_path)
+    test.add_transaction(test.file_path, test.account_type, 1000)
+    test.add_transaction(test.file_path, test.account_type, -500)

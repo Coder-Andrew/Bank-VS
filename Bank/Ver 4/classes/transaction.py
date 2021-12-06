@@ -6,7 +6,7 @@ class Transaction:
 
 
     def write_format(self):
-        return f'{self.initial},{self.amount},{self.final}'
+        return f'{self.initial},{self.amount},{self.final}\n'
 
 
     def __str__(self):
