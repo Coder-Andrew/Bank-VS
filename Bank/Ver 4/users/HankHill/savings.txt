@@ -1,0 +1,5 @@
+First Name,Last Name,Account Type,Balance
+Hank,Hill,savings,1000
+
+Initial Balance,Amount,Final Balance
+0,1000,1000

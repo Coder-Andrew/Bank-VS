@@ -1,5 +1,0 @@
-First Name,Last Name,Account Type,Balance
-Andrew,Test,checking,500
-
-Initial Balance,Amount,Final Balance,Checked
-0,500,500

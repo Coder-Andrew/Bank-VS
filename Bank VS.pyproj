@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3ca17bf0-5f46-470e-a079-8234341ce24f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Bank\Ver 3\main.py</StartupFile>
+    <StartupFile>Bank\Ver 4\classes\savings.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -81,6 +81,17 @@
     <Compile Include="Bank\Ver 3\main.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Bank\Ver 3\tests\another class test.py" />
+    <Compile Include="Bank\Ver 3\tests\class attribute not being initialized.py" />
+    <Compile Include="Bank\Ver 3\tests\user object pointer.py" />
+    <Compile Include="Bank\Ver 4\classes\account.py" />
+    <Compile Include="Bank\Ver 4\classes\checking.py" />
+    <Compile Include="Bank\Ver 4\classes\savings.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bank\Ver 4\classes\transaction.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Bank_VS.py" />
   </ItemGroup>
   <ItemGroup>
@@ -113,7 +124,14 @@
     <Folder Include="Bank\Ver 2\iterClassTest\" />
     <Folder Include="Bank\Ver 2\writeFilesToDir\" />
     <Folder Include="Bank\Ver 3\classes\" />
+    <Folder Include="Bank\Ver 3\classes\__pycache__\" />
+    <Folder Include="Bank\Ver 3\tests\" />
     <Folder Include="Bank\Ver 3\users\" />
+    <Folder Include="Bank\Ver 4\" />
+    <Folder Include="Bank\Ver 4\classes\" />
+    <Folder Include="Bank\Ver 4\classes\__pycache__\" />
+    <Folder Include="Bank\Ver 4\tests\" />
+    <Folder Include="Bank\Ver 4\users\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.9" />
@@ -130,6 +148,17 @@
     <Content Include="Bank\Ver 2\Bank\__pycache__\transaction.cpython-39.pyc" />
     <Content Include="Bank\Ver 2\fileStructure\testClass\__pycache__\importThis.cpython-39.pyc" />
     <Content Include="Bank\Ver 2\fileStructure\testClass\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\classes\__pycache__\account.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\classes\__pycache__\bank.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\classes\__pycache__\checking.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\classes\__pycache__\file_handler.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\classes\__pycache__\plotter.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\classes\__pycache__\savings.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\classes\__pycache__\transaction.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\classes\__pycache__\__init__.cpython-39.pyc" />
+    <Content Include="Bank\Ver 3\tests\info.txt" />
+    <Content Include="Bank\Ver 3\tests\info1.txt" />
+    <Content Include="Bank\Ver 4\classes\__pycache__\account.cpython-39.pyc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
