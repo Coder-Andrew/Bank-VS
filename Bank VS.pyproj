@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3ca17bf0-5f46-470e-a079-8234341ce24f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Bank\Ver 4\classes\savings.py</StartupFile>
+    <StartupFile>Bank\Ver 4\classes\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -85,7 +85,11 @@
     <Compile Include="Bank\Ver 3\tests\class attribute not being initialized.py" />
     <Compile Include="Bank\Ver 3\tests\user object pointer.py" />
     <Compile Include="Bank\Ver 4\classes\account.py" />
+    <Compile Include="Bank\Ver 4\classes\bank.py" />
     <Compile Include="Bank\Ver 4\classes\checking.py" />
+    <Compile Include="Bank\Ver 4\classes\main.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Bank\Ver 4\classes\savings.py">
       <SubType>Code</SubType>
     </Compile>
@@ -132,6 +136,9 @@
     <Folder Include="Bank\Ver 4\classes\__pycache__\" />
     <Folder Include="Bank\Ver 4\tests\" />
     <Folder Include="Bank\Ver 4\users\" />
+    <Folder Include="Bank\Ver 4\users\FredJennings\" />
+    <Folder Include="Bank\Ver 4\users\HankHill\" />
+    <Folder Include="Bank\Ver 4\users\JohnSouth\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="Global|PythonCore|3.9" />
@@ -159,6 +166,10 @@
     <Content Include="Bank\Ver 3\tests\info.txt" />
     <Content Include="Bank\Ver 3\tests\info1.txt" />
     <Content Include="Bank\Ver 4\classes\__pycache__\account.cpython-39.pyc" />
+    <Content Include="Bank\Ver 4\users\FredJennings\checking.txt" />
+    <Content Include="Bank\Ver 4\users\FredJennings\savings.txt" />
+    <Content Include="Bank\Ver 4\users\HankHill\checking.txt" />
+    <Content Include="Bank\Ver 4\users\HankHill\savings.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

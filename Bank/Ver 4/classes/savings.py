@@ -9,5 +9,6 @@ class Savings(Account):
         self.make_file_if_one_doesnt_exist(self.account_type)
 
 if __name__ == '__main__':
-    hank = Savings('Hank', 'Hill', 1000)
-    print(hank.transactions)
+    hank = Savings('Hank', 'Frank', 1000)
+    #print(hank.transactions)
+    hank.close_account(hank.file_path)
