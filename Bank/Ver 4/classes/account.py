@@ -18,6 +18,8 @@ class Account:
     def __str__(self):
         return f'First Name: {self.first_name}, Last Name: {self.last_name}, Balance: {self.balance}'
 
+    def print(self, account_type):
+        return f'First Name: {self.first_name}, Last Name: {self.last_name}, Account Type: {account_type}, Balance: {self.balance}'
 
     def make_folder_if_one_doesnt_exist(self):
         if not os.path.isdir(self.path):
